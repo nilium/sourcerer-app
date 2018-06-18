@@ -34,9 +34,6 @@ class RubyExtractor : ExtractorInterface {
             }
         }
 
-        // TODO(lyaronskaya): read external files
-        imports.add("rails")
-
         return imports.toList()
     }
 

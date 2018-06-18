@@ -116,12 +116,6 @@ class ExtractorTest : Spek({
             assertExtractsLineLibraries("com.github.kittinunf.fuel",
                     line, KotlinExtractor())
         }
-
-        it("ruby extractor extracts rails") {
-            val line = "class Article < ActiveRecord::Base"
-            assertExtractsLineLibraries("rails",
-                    line, RubyExtractor())
-        }
     }
 
     given("code line doesn't use libraries" ) {
